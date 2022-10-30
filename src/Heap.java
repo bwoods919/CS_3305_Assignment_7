@@ -1,4 +1,6 @@
-// Class Heap.java 
+
+
+// Class Heap.java
 // Textbook - Listing 23.9, Page 878
 
 public class Heap<E extends Comparable<E>> {

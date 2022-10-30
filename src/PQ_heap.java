@@ -6,21 +6,31 @@ public class PQ_heap
    PQ_heap() {};
 	
 	// Return true if priority queue is empty; otherwise return false
-   public boolean is_empty() {};
+    public boolean is_empty() {
+       return true;
+   };
 	
 	// Return true if priority queue is full; otherwise return false
-   public boolean is_full() {};
+   public boolean is_full() {
+       return true;
+   };
 
 	// Return (don't remove) the front element from the priority queue
 	// Precondition: priority queue is not empty.
-   public int front() {};
+   public int front() {
+       return 1;
+   };
 
 	// return number of elements in the queue
-   public int size() {};
+   public int size() {
+       return 0;
+   };
    
 	// Remove the largest value from this priority queue and return it.
 	// Precondition: priority queue is not empty.
-   public int dequeue() {};
+   public int dequeue() {
+       return 3;
+   };
 
 	// Inserts the 'value' into the priority queue.
 	// Precondition: priority queue is not full
