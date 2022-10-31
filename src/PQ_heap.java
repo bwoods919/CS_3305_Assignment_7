@@ -1,4 +1,11 @@
-// Generic code for class priority_queue_heap for Assignment 7 
+// Name: Brendan Woods
+// Class: CS 3305/01
+// Term: Fall 2022
+// Instructor: Dr. Haddad
+// Assignment: 7
+// IDE Name: IntelliJ
+
+// Generic code for class priority_queue_heap for Assignment 7
 
 public class PQ_heap
 {	
