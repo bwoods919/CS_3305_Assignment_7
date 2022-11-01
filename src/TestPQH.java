@@ -19,8 +19,8 @@ public class TestPQH {
 
         String inputStr = "";
 
-        PQ_heap<String> stringHeap = new PQ_heap<String>();
-        PQ_heap<Integer> intHeap = new PQ_heap<Integer>();
+        PQ_heap<String> strPQH = new PQ_heap<String>();
+        PQ_heap<Integer> intPQH = new PQ_heap<Integer>();
 
         while (!firstRun) {
 
@@ -75,38 +75,48 @@ public class TestPQH {
 
                     if (data) { // String
                         System.out.print("Enter a string to enqueue: ");
-                        stringHeap.enqueue(input.next());
+                        strPQH.enqueue(input.next());
                     } else { // Integer
                         System.out.print("Enter an integer to enqueue: ");
-                        intHeap.enqueue(input.nextInt());
+                        intPQH.enqueue(input.nextInt());
                     }
                     break;
 
                 case 2: // Dequeue Element
                     if (data) // String
-                        stringHeap.dequeue();
+                        strPQH.dequeue();
                     else // Integer
-                        intHeap.dequeue();
+                        intPQH.dequeue();
                     break;
 
                 case 3: // Check is_Full
                     if (data) // String
-                        System.out.println("Is string Priority Queue full? " + stringHeap.is_full());
+                        System.out.println("Is string Priority Queue full? " + strPQH.is_full());
                     else // integer
-                        System.out.println("Is integer Priority Queue full? " + intHeap.is_full());
+                        System.out.println("Is integer Priority Queue full? " + intPQH.is_full());
                     break;
+                
+                case 4:
+                    
+                    if (data) // String
+                        System.out.println("Is string Priority Queue empty? " + strPQH.is_empty());
+                    else 
+                        System.out.println("Is Integer Prority Queue empty? " + intPQH.is_empty());    
+
+                    break;
+
 
                 case 5: // Print PQueue Size
 
                     if (data) // string
-                        System.out.println("The size of the String Priority Queue is : " + stringHeap.size());
+                        System.out.println("The size of the String Priority Queue is : " + strPQH.size());
 
                     break;
                 case 6: // Display Front Element
                     if (data) // String
-                        System.out.println("The first element of the String Priority Queue is : " + stringHeap.front());
+                        System.out.println("The first element of the String Priority Queue is : " + strPQH.front());
                     else // Int
-                        System.out.println("The first element of the Integer Priority Queue is: " + intHeap.front());
+                        System.out.println("The first element of the Integer Priority Queue is: " + intPQH.front());
                     break;
 
                 case 7: // Print PQueue Elements
@@ -114,6 +124,7 @@ public class TestPQH {
                     break;
 
                 case 8: // Exit
+                    input.close();
                     System.exit(255);
                     break;
             }
