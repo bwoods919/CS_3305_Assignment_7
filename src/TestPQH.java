@@ -91,17 +91,28 @@ public class TestPQH {
 
                 case 3: // Check is_Full
                     if (data) // String
-                        System.out.println("Is string Heap full? " + stringHeap.is_full());
+                        System.out.println("Is string Priority Queue full? " + stringHeap.is_full());
                     else // integer
-                        System.out.println("Is integer Heap full? " + intHeap.is_full());
+                        System.out.println("Is integer Priority Queue full? " + intHeap.is_full());
                     break;
 
                 case 5: // Print PQueue Size
+
+                    if (data) // string
+                        System.out.println("The size of the String Priority Queue is : " + stringHeap.size());
+
                     break;
                 case 6: // Display Front Element
+                    if (data) // String
+                        System.out.println("The first element of the String Priority Queue is : " + stringHeap.front());
+                    else // Int
+                        System.out.println("The first element of the Integer Priority Queue is: " + intHeap.front());
                     break;
+
                 case 7: // Print PQueue Elements
+
                     break;
+
                 case 8: // Exit
                     System.exit(255);
                     break;

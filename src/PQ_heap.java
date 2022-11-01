@@ -9,11 +9,10 @@
 
 public class PQ_heap <E extends Comparable<E>> {
 
-    private Heap<E> heap = new Heap();
+    public Heap<E> heap = new Heap<>();
 
     // Constructor method
     PQ_heap() {
-        heap.add(object);
     };
 
     // Return true if priority queue is empty; otherwise return false
@@ -29,7 +28,7 @@ public class PQ_heap <E extends Comparable<E>> {
     // Return (don't remove) the front element from the priority queue
     // Precondition: priority queue is not empty.
     public E front() {
-        return null;
+        return heap.get(0);
     };
 
     // return number of elements in the queue

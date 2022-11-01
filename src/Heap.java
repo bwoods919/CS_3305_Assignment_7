@@ -84,4 +84,8 @@ public class Heap<E extends Comparable<E>> {
   public int getSize() {
     return list.size();
   }
+
+  public E get(int i) {
+    return list.get(i);
+  }
 }
