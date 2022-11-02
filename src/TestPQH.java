@@ -83,10 +83,13 @@ public class TestPQH {
                     break;
 
                 case 2: // Dequeue Element
-                    if (data) // String
+                    if (data) {// String
                         strPQH.dequeue();
-                    else // Integer
+                        System.out.println("Dequeue from String Priority Queue was successful");
+                    } else { // Integer
                         intPQH.dequeue();
+                        System.out.println("Dequeue from Integer Priority Queue was successful");
+                    }
                     break;
 
                 case 3: // Check is_Full
@@ -120,7 +123,11 @@ public class TestPQH {
                     break;
 
                 case 7: // Print PQueue Elements
-
+                    
+                    if (data) // String
+                        strPQH.printHeap();
+                    else // Integer
+                        intPQH.printHeap();
                     break;
 
                 case 8: // Exit

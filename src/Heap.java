@@ -88,4 +88,18 @@ public class Heap<E extends Comparable<E>> {
   public E get(int i) {
     return list.get(i);
   }
+
+  // Method to print the heap in tree form
+  public void printHeap() {
+
+    for (int i=0; i<list.size(); i++){
+      System.out.print("Index " + i + ": " + list.get(i));
+      
+      if ((i*2+1) < (list.size()))
+        System.out.print(" " + list.get(i*2+1));
+      if ((i*2+2) < (list.size())) 
+        System.out.print(" " + list.get(i*2+2));
+      System.out.println();
+    }
+  }
 }

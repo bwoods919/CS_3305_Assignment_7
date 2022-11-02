@@ -46,4 +46,8 @@ public class PQ_heap <E extends Comparable<E>> {
     public void enqueue(E value) {
         heap.add(value);
     };
+
+    public void printHeap() {
+        heap.printHeap();
+    }
 };
